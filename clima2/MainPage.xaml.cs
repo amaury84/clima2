@@ -24,8 +24,8 @@ namespace clima2
         private async void ObtenerCLimaBtn(object sender, EventArgs e)
         {
             string city = CityEntry.Text;
-            string apikey = "ec47323ccc0fde17e0219a4f991fb21d";
-            string apiUrl = "api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=ec47323ccc0fde17e0219a4f991fb21d";
+            string apikey = "YOUR-API-KEY";
+            string apiUrl = "api.openweathermap.org/data/2.5/weather?q="+city+"&APPID="+apikey;
             HttpResponseMessage response = await Client.GetAsync(apiUrl);
             if ( response.IsSuccessStatusCode)
             {
