@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="clima2.MainPage">
+
+    <StackLayout Padding="20">
+        <Image  Source="https://img.freepik.com/vector-gratis/iconos-clima-nublado-lluvioso-soleado_1308-126268.jpg" Aspect="AspectFit"/>
+        <Label Text="Ingrese el nombre de la ciudad" />
+        <Entry x:Name="CityEntry" Placeholder="Ciudad" />
+        <Button Text="Obtener Clima" Clicked="ObtenerCLimaBtn"  />
+        <Label Text="Algo" x:Name="WeatherLaber" FontSize="23" HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>
